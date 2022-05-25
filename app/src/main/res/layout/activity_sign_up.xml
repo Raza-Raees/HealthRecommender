@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hello"
+        android:text="Hello!"
+        android:textColor="@color/purple_200"
+        android:textSize="40sp"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="20dp"
+
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        android:text="Are you a Dr or a Patient?"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv1"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/medical"
+        tools:ignore="ContentDescription" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/dr"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/purple_200"
+        android:fontFamily="sans-serif"
+
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Doctor"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/patient"
+        android:background="@color/purple_200"
+        android:text="Patient"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dr"
+        android:padding="20dp"
+
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:fontFamily="sans-serif"
+        android:text="Already have an account! LogIn In"
+        android:textColor="@color/purple_200"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck"
+        android:onClick="LogInbtn"/>
+
+
+</RelativeLayout>
